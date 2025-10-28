@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../list"
+	},
+	{
+		"path": "../streamline"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "streamline"
+  }
+}
