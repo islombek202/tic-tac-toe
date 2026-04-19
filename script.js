@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=app-device-width, initial-scale=1.0"/>
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="main.css" />
- 
-</head>
-<body>
-  <div class="game-container">
-    <h1>X va O o'yini</h1>
-    <div id="board" class="board">
-      
-    </div>
-    <p id="status"></p>
-    <button id="reset">Qaytadan boshlash</button>
-  </div>
-
-  <script src="script.js">const board = document.getElementById('board');
+const board = document.getElementById('board');
 const statusText = document.getElementById('status');
 const resetButton = document.getElementById('reset');
-
+const cellBoard = document.getElementById('cellBoard');
 let cells = [];
-let currentPlayer = 'X';
+let currentPlayer = 'O';
 let gameActive = true;
 
 // Create a turn indicator
@@ -66,10 +47,10 @@ function handleClick(e) {
   e.target.textContent = currentPlayer;
 
   if (checkWin()) {
-    statusText.textContent = `🎉 Ishtirokchi ${currentPlayer} G'olib!`;
+    statusText.textContent = `🎉 Ishtirokchi ${currentPlayer} G'OLIB!`;
     gameActive = false;
   } else if (cells.every(cell => cell !== '')) {
-    statusText.textContent = `🤝 Durrang!`;
+    statusText.textContent = `🤝 DURRANG!`;
     gameActive = false;
   } else {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
@@ -91,11 +72,9 @@ function checkWin() {
 }
 
 function updateTurnDisplay() {
-  turnDisplay.textContent = `🧑 O'yincchi ${currentPlayer}ning Gali`;
+  turnDisplay.textContent = `🎮 Ishtirokchi ${currentPlayer} ning gali!`;
 }
 
 resetButton.addEventListener('click', initBoard);
 
-initBoard();</script>
-</body><br><footer>&copy;ISLOMBEK</footer>
-</html>
+initBoard();                       
