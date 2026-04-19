@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #07d37e;
+  color: hsl(116, 98%, 49%);
 }
 
 .game-container {
