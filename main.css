@@ -98,7 +98,7 @@ h1 {
 
 #reset:hover {
   background-color: #fb0202;
-  transform: scale(2.0);
+  transform: scale(1.6);
   border-style:groove;
   border-color: #07d37e;
 }
